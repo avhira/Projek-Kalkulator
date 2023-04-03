@@ -1,0 +1,38 @@
+/* mobile */
+@media (max-width: 768px) {
+  .layer {
+    flex-direction: column;
+  }
+  .artis {
+    font-size: 10px;
+  }
+  .wrap {
+    width: 300px;
+    margin-right: 0;
+  }
+  .show {
+    font-size: 20px;
+  }
+  .calculator {
+    width: 300px;
+  }
+  button {
+    font-size: 25px;
+    height: 50px;
+    width: 25%;
+  }
+
+  .row {
+    justify-content: space-between;
+  }
+  .number,
+  .operator,
+  .decimal,
+  .equal,
+  .persen,
+  .delete,
+  .all-clear {
+    border-radius: 10px;
+    margin: 10px 3px;
+  }
+}

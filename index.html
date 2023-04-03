@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script defer>
+      window.onload = function () {
+        Particles.init({
+          selector: '.background',
+          maxParticles: 100,
+          connectParticles: 'true',
+          speed: 0.5,
+          minDistance: 50,
+          sizeVariations: 10,
+          color: '#2878f7',
+        });
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  </head>
+  <body>
+    <canvas class="background"></canvas>
+    <div class="layer">
+      <div class="artis">
+        <h1>Calculator by @ Muhammad Yusup Abdillah</h1>
+      </div>
+      <div class="wrap">
+        <div class="calculator">
+          <div class="screen-wrap">
+            <p class="show">operator</p>
+            <input type="text" class="calculator-screen" value="0" disabled />
+          </div>
+          <div class="calculator-key">
+            <div class="row">
+              <button class="all-clear">AC</button>
+              <!-- <button class="delete">DEL</button> -->
+              <button class="operator persen" value="%">%</button>
+              <button class="operator" value="/">&divide;</button>
+            </div>
+            <div class="row">
+              <button class="number" value="7">7</button>
+              <button class="number" value="8">8</button>
+              <button class="number" value="9">9</button>
+              <button class="operator" value="*">x</button>
+            </div>
+            <div class="row">
+              <button class="number" value="4">4</button>
+              <button class="number" value="5">5</button>
+              <button class="number" value="6">6</button>
+              <button class="operator" value="-">-</button>
+            </div>
+            <div class="row">
+              <button class="number" value="1">1</button>
+              <button class="number" value="2">2</button>
+              <button class="number" value="3">3</button>
+              <button class="operator" value="+">+</button>
+            </div>
+            <div class="row">
+              <button class="number zero-btn" value="0">0</button>
+              <button class="decimal" value=".">.</button>
+              <button class="equal">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
